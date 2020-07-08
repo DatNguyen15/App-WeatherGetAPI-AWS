@@ -7,13 +7,14 @@ import Footer from './components/Footer';
 
 
 export default class App extends Component {
-  constructor(props) {
+  constructor(props) {// hàm khởi tạo component
     super(props)
     this.state = {
       
     }
     this._getWeatherReport = this._getWeatherReport.bind(this);
   }
+  //khai báo 1 hàm bất đồng bộ(biến thành Promise)
   async _getWeatherReport() {
     const response = await fetch('http://18.220.240.188:5000/iot')
     const data = await response.json();
@@ -25,14 +26,12 @@ export default class App extends Component {
         
       })
   }
+  // hàm lấy dữ liệu từ server để reder  dữ liệu ra
   async componentDidMount() {
     await this._getWeatherReport();
    console.log(this.state)
   }
-
-
-
-
+//hàm render để hiển thị ra màn hình
     render() {
         return (
       

@@ -5,25 +5,25 @@ export default class Header extends Component {
     render() {
         return (
             <View>
-                <Text style={styles.text}> Ứng dụng dự báo nhiệt độ sau 30 phút  </Text>
-                <Image source={require('../assets/weather/sunny2.png')} style={styles.img} />
-                <Text style={styles.temp_text}>30.22 °C </Text>
-                <Text style={styles.city}>Hồ Chí Minh, Việt Nam</Text>
+
+                <Text></Text>
+                <Text style={styles.text}> Weather App</Text>
+                <Image source={require('../assets/weather/snow3.png')} style={styles.img} />
             </View>
         )
     }
 }
 const styles = StyleSheet.create({
     text: {
-       
-        fontSize: 24,
+        fontSize: 40,
         fontWeight: 'bold',
         textAlign: 'center',
-        color: '#333'
+        color: '#003399',
+        
     },
     img: {
-        width: 50,
-        height: 50,
+        width: 150,
+        height: 150,
         alignSelf: 'center',
         marginVertical: 10
     },

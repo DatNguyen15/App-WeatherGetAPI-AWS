@@ -7,9 +7,9 @@ export default class Content extends Component {
     render() {
         return (
             <View style={styles.container}>
-                <Card img={require("../assets/weather/rainy3.png")} bgcolor="orange" color1="orange" color2="pink" style={{borderTopLeftRadius: 70 }} data={this.props.data} />
+                <Card img={require("../assets/weather/rainy3.png")} bgcolor="bluelight" color1="bluelight" color2="bluelight" style={{borderTopLeftRadius: 70 }} data={this.props.data} />
                 
-                <Card1 img={require("../assets/weather/moon.png")} bgcolor="lightgreen" color1="lightblue" color2="lightgreen" style={{borderBottomRightRadius: 70 }} data1={this.props.data1} />
+                <Card1 img={require("../assets/weather/sunny2.png")} bgcolor="bluelight" color1="bluelight" color2="bluelight" style={{borderBottomRightRadius: 70 }} data1={this.props.data1} />
             </View>
         )
     }
